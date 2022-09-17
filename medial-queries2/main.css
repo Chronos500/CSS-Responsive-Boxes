@@ -1,3 +1,106 @@
+
 body {
   background: papayawhip;
 }
+
+
+.container{
+  display: flex;
+  min-width: 30vh;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  padding: 1.5em;
+
+  
+}
+
+.a,.b,.c,.d,.e,.f{
+  border: .2em solid gold;
+  justify-content: center;
+  margin: .4em;
+  background-color: green;
+  font-weight: bold;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+
+}
+
+.cde{
+  display: flex;
+  justify-content: row;
+  justify-content: space-between;
+}
+
+
+section{
+  display: flex;
+  flex-direction: column;
+  flex-grow: .8;
+  justify-content: space-between;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-grow: 2;
+}
+
+main .b{
+  flex-grow: 2;
+}
+
+main .cde{
+  flex-grow: 1;
+}
+
+.a{
+  flex-grow: .15;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.f{
+  display: flex;
+  flex-grow: .5
+}
+
+.c,.d,.e{
+  min-width: auto;
+  flex-grow: 1.5;
+}
+
+
+
+@media (min-width: 600px) {
+
+  .b{
+    display: flex;
+    max-width: 100%;
+    max-height: auto;
+  }
+  .cde{
+    display:flex;
+    max-width: 100%;
+  }
+  .f{
+    display: flex;
+    min-width: 20%;
+    height: auto;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    min-width: 70%;
+  }
+  
+  section{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-evenly;
+  }
+  }

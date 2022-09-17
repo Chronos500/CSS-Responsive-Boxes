@@ -1,3 +1,124 @@
+
 body {
-  background: peachpuff;
+  background: papayawhip;
 }
+
+
+.container{
+  display: flex;
+  min-width: 30vh;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  padding: 1.5em;
+
+  
+}
+
+.a,.b,.c,.d,.e,.f,.g,.h{
+  border: .2em solid rgb(238, 1, 1);
+  justify-content: center;
+  margin: .4em;
+  background-color: rgb(230, 191, 173);
+  font-weight: bold;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+
+}
+
+.bcd{
+  display:flex;
+  justify-content: row;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.efg{
+  display: flex;
+  justify-content: row;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+
+section{
+  display: flex;
+  flex-direction: column;
+  flex-grow: .8;
+  justify-content: space-between;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-grow: 2;
+}
+
+
+main .bcd{
+  flex-grow: 1;
+}
+main .efg{
+  flex-grow: 1;
+}
+
+.a{
+  flex-grow: .15;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.h{
+  display: flex;
+  flex-grow: .5
+}
+
+.b,.c,.d{
+  min-width: auto;
+  flex-grow: 1.5;
+}
+
+.e,.f,.g{
+  min-width: auto;
+  flex-grow: 1.5;
+}
+
+
+
+
+@media (min-width: 600px) {
+
+  .b{
+    display: flex;
+    max-width: 100%;
+    max-height: auto;
+  }
+  .bcd{
+    display:flex;
+    max-width: 100%;
+  }
+  .efg{
+    display:flex;
+    max-width: 100%;
+  }
+  .h{
+    display: flex;
+    min-width: 20%;
+    height: auto;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    min-width: 70%;
+  }
+  
+  section{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-evenly;
+  }
+  }
+
