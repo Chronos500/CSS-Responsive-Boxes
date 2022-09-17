@@ -1,6 +1,6 @@
 
 body {
-  background: papayawhip;
+  background: rgb(16, 197, 203);
 }
 
 
@@ -16,10 +16,10 @@ body {
 }
 
 .a,.b,.c,.d,.e,.f,.g,.h{
-  border: .2em solid rgb(238, 1, 1);
+  border: .2em solid purple;
   justify-content: center;
   margin: .4em;
-  background-color: rgb(230, 191, 173);
+  background-color: orange;
   font-weight: bold;
   font-size: xx-large;
   display: flex;
@@ -48,20 +48,7 @@ section{
   justify-content: space-between;
 }
 
-main{
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  flex-grow: 2;
-}
 
-
-main .bcd{
-  flex-grow: 1;
-}
-main .efg{
-  flex-grow: 1;
-}
 
 .a{
   flex-grow: .15;
@@ -108,12 +95,7 @@ main .efg{
     min-width: 20%;
     height: auto;
   }
-  main{
-    display: flex;
-    flex-direction: column;
-    min-width: 70%;
-  }
-  
+ 
   section{
     display: flex;
     flex-direction: row;
